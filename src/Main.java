@@ -12,21 +12,25 @@ public class Main {
             num = RollDie.rollDie();
             if (num <= 2){
                 System.out.println("Lucky you! There's another train. You make it to school just in time!");
-                RollDie.story1();
+                Stories.story1();
             } else if (3 <= num || num <= 5) {
                 System.out.println("The train is delayed :( You waited for 20 minutes and it's still not here." +
                         " You get to school late.");
-                RollDie.story1();
+                Stories.story1();
             } else if (num == 6){
                 System.out.println("You got abducted by aliens!!");
                 num = RollDie.rollDie();
                 if (num == 1){
                     System.out.println("By some miracle you somehow escaped!");
+                    Stories.story1();
+                } else {
+                    System.out.println("The aliens saw your attempt to escape and locked you in a cell.");
+                    Stories.story2();
                 }
             }
         } else {
             System.out.println("You made it to school with extra time to spare!");
-            RollDie.story1();
+            Stories.story1();
         }
         scan.close();
 
