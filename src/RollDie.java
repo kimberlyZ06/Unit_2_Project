@@ -8,11 +8,9 @@ public class RollDie{
         response = response.toLowerCase();
 
         if (response.equals("yes")){
-            System.out.println("Result: " + num);
             return num;
         } else {
             System.out.println("Too bad");
-            System.out.println("Result: " + num);
             return num;
         }
     }

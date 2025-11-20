@@ -54,7 +54,7 @@ public class Stories {
         System.out.println("It's time to head home!");
         num = RollDie.rollDie();
         if (num <= 4){
-            System.out.println("Woohoo! The train is here! you got home with no problems.");
+            System.out.println("Woohoo! The train is here! You got home with no problems.");
         } else {
             System.out.println("Turns out It started pouring :(");
             System.out.println("Your normal 30 minute commute turned to 3 hrs...");
@@ -64,7 +64,6 @@ public class Stories {
         System.out.println("However, there's one thing you can't avoid");
         System.out.println("Studying and homework :(");
 
-        System.out.println("Do you study and finish your homework?");
         num = RollDie.rollDie();
         if (num <= 3){
             System.out.println("You studied and finished your assignments.");
@@ -80,7 +79,6 @@ public class Stories {
         }
 
         System.out.println("It is now 11pm. You should probably go to bed.");
-        System.out.println("Do you?");
         num = RollDie.rollDie();
         if (num <= 2){
             System.out.println("Time for bed! You go to sleep and wakes up with a good night's of rest.");
@@ -92,8 +90,8 @@ public class Stories {
     }
 
     public static void story2 (){
-            int num = RollDie.rollDie();
-        System.out.println("Do you give up or try to get out?");
+        System.out.println("You have a choice of giving up or trying to escape again.");
+        int num = RollDie.rollDie();
         if (num <= 3){
             System.out.println("You give up believing you can't escape");
             System.out.println("You die on the spaceship never to be seen again.");
@@ -101,6 +99,42 @@ public class Stories {
         } else {
             System.out.println("You decided it was better to try to escape again then sit and do nothing");
             System.out.println("After looking around a bit, you realize they use a keycard to stop the lasers trapping you.");
+            System.out.println("You have a choice of trying to get the card or keep looking around.");
+            num = RollDie.rollDie();
+            if (num <= 3){
+                System.out.println("You decided to stick your arm out and try pickpocketing an alien with the card");
+                num = RollDie.rollDie();
+                if (num <= 2){
+                    System.out.println("You got the card and made it out of the UFO!");
+                    System.out.println("Unfortunately, no one believed your story and you're forced back to school.");
+                    story1();
+                } else {
+                    System.out.println("While you stuck your arm out, you accidentally touched a laser and it loped off your arm.");
+                    System.out.println("Luckily, you won't bleed out but you lost all hope and accepted your fate.");
+                    System.out.println("You end up dying on the ship");
+                    System.out.println("The end");
+
+                }
+            } else {
+                System.out.println("After looking around some more");
+                System.out.println("You realized you weren't the first person trying to escape!");
+                System.out.println("There are still things left from the previous person");
+                System.out.println("You find first aid, a parachute, and a sandwich");
+                System.out.println("You also realized a part of the wall is really thin");
+                System.out.println("You broke the wall.");
+                num = RollDie.rollDie();
+                if (num <= 2){
+                    System.out.println("Luckily, you're not in space yet");
+                    System.out.println("You jumped out and used the parachute you found");
+                    System.out.println("You survived but no one believes your story");
+                    System.out.println("Your parents thought you were crazy and skipped school");
+                } else {
+                    System.out.println("Turns out you are in space.");
+                    System.out.println("Your body isn't made for that and you die.");
+                    System.out.println("Your remains end up floating in space until they were discovered years later.");
+                    System.out.println("The end.");
+                }
+            }
 
         }
 

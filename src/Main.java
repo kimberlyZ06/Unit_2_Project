@@ -13,12 +13,12 @@ public class Main {
             if (num <= 2){
                 System.out.println("Lucky you! There's another train. You make it to school just in time!");
                 Stories.story1();
-            } else if (3 <= num || num <= 5) {
+            } else if (3 <= num && num <= 5) {
                 System.out.println("The train is delayed :( You waited for 20 minutes and it's still not here." +
                         " You get to school late.");
                 Stories.story1();
             } else if (num == 6){
-                System.out.println("You got abducted by aliens!!");
+                System.out.println("Uh Oh! You got abducted by aliens!!");
                 num = RollDie.rollDie();
                 if (num == 1){
                     System.out.println("By some miracle you somehow escaped!");
