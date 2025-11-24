@@ -139,4 +139,16 @@ public class Stories {
         }
 
     }
+    public static void story3 (){
+        System.out.println("The first thing you need to find is a water source.");
+        int num = RollDie.rollDie();
+        if (num <= 2){
+            System.out.println("Yay! You found a clean stream.");
+            System.out.println("You fill a bottle and continue on your journey following the stream");
+        } else{
+            System.out.println("You didn't find water. :(");
+            System.out.println("You die after looking around for a few more days");
+            System.out.println("The end.");
+        }
+    }
 }
