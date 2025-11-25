@@ -13,7 +13,7 @@ public class Main {
             if (num <= 2){
                 System.out.println("Lucky you! There's another train. You make it to school just in time!");
                 Stories.story1();
-            } else if (num <= 3) {
+            } else if (num <= 4) {
                 System.out.println("A unknown portal appears before you");
                 num = RollDie.rollDie();
                 if (num <= 3){
@@ -23,6 +23,7 @@ public class Main {
                 } else {
                     System.out.println("Curiosity got the better of you and you enter the portal.");
                     System.out.println("On the other side, you see a huge forest and the portal closes on you.");
+                    Stories.story3();
 
                 }
             }else if (num <= 5) {

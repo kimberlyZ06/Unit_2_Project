@@ -145,6 +145,38 @@ public class Stories {
         if (num <= 2){
             System.out.println("Yay! You found a clean stream.");
             System.out.println("You fill a bottle and continue on your journey following the stream");
+            System.out.println("You get thirsty after a bit and want to drink some water.");
+            num = RollDie.rollDie();
+            if (num <= 3){
+                System.out.println("You decided to drink the water.");
+                num = RollDie.rollDie();
+                if (num <= 2){
+                    System.out.println("Good thing you filtered and boiled the water.");
+                    System.out.println("You continue on your journey.");
+                    System.out.println("After walking for a bit you found some berries.");
+                    num = RollDie.rollDie();
+
+                    if (num <= 2){
+                        System.out.println("Luckily for you, the berries were edible!");
+                        System.out.println("You continued on and made it to civilization a few days later.");
+                    } else if (num <= 4){
+                        System.out.println("Turns out those were black nightshades and poisonous!");
+                        System.out.println("You start hallucinating and vomiting. " +
+                                "Your stomach starts to hurt and you have a headache.");
+                        System.out.println("With no way to cure it, you die.");
+                        System.out.println("The end.");
+                    }
+                } else {
+                    System.out.println("Uh Oh! you forgot to clean the water.");
+                    System.out.println("There were bacteria in the water and you get sick after a few days");
+                    System.out.println("With no way to cure it, you die after a few days.");
+                    System.out.println("The end.");
+                }
+            } else {
+                System.out.println("For some reason you don't drink the water.");
+                System.out.println("You die from dehydration after a few days.");
+                System.out.println("The end.");
+            }
         } else{
             System.out.println("You didn't find water. :(");
             System.out.println("You die after looking around for a few more days");
